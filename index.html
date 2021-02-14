@@ -3,10 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -60,17 +57,16 @@
       }
 
       .cover {
-        background: url(img/bg_himawari_hatake_wide.jpg);
-        width: 100;
-        height: 100;
+        background: url(img/fotobook.png);
+        background-size: cover;
       }
     </style>
   </head>
   <body>
     <header>
-      <div class="container py-2">
+      <div class="container py-2 bg-white">
         <nav class="navbar navbar-expand-sm navbar-light">
-          <a href="#" class="navbar-brand font-weight-bold"
+          <a href="index.html" class="navbar-brand font-weight-bold"
             >うぇぶ部どっとコム</a
           >
           <button
@@ -80,45 +76,49 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div id="menu" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-5">
-              <li class="nav-item ml-2">
+          <div
+            id="menu"
+            class="collapse navbar-collapse d-grid gap-2 d-md-flex justify-content-md-end"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item mx-2">
                 <a href="#portfolio" class="nav-link">PORTFOLIO</a>
               </li>
-              <li class="nav-item ml-2">
+              <li class="nav-item mx-2">
                 <a href="#about" class="nav-link">ABOUT</a>
               </li>
-              <li class="nav-item ml-2">
+              <li class="nav-item mx-2">
                 <a href="#contact" class="nav-link">CONTACT</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-      <div class="cover text-secondary text-center pt-4">
-        <h1 class="font-weight-bold mt-3 mb-4 my-lg-5">
-          絵日記のようなポートフォリオサイトです
-        </h1>
-        <a href="#about" class="btn btn-success btn-lg mt-3 mb-4 my-4"
-          >click me<br />僕はこんなヒトです</a
-        >
-      </div>
     </header>
-
     <main>
+      <div class="row">
+        <!-- <h1 class="font-weight-bold mt-1 mb-1">
+          我が家
+        </h1> -->
+        <img src="img/title.png" class="col mx-5 rounded" alt="" />
+        <!-- <a href="#about" class="btn btn-success btn-lg mt-3 mb-4 my-4"
+          >click me<br />僕はこんなヒトです</a
+        > -->
+      </div>
+
       <section class="page-section bg-light py-5" id="portfolio">
         <div class="container">
-          <div class="text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <p class="section-subheading text-muted">
-              関心のあることや出来事などを自作サイトにしてます。
+          <div class="text-center text-nowrap mb-4">
+            <h2 class="section-heading fw-bold">CATEGORY</h2>
+            <p class="text-secondary">
+              家族や僕の気になることを、<br />のんびりまとめたホームページにしてます。
             </p>
           </div>
           <div class="row">
             <!-- ここからポートフォリオのコード -->
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-4 col-6 mb-4">
               <div class="portfolio-item">
-                <a href="https://web-kenpi.github.io/senka_fotobook/">
+                <a href="daughter.html">
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
                       <i class="fas fa-plus fa-3x"></i>
@@ -126,22 +126,19 @@
                   </div>
                   <img
                     class="img-fluid rounded"
-                    src="img/fotobook.png"
+                    src="img/manamusume.png"
                     alt=""
                   />
                 </a>
                 <div class="portfolio-caption text-center">
-                  <div class="portfolio-caption-heading">フォトブック</div>
-                  <div class="portfolio-caption-subheading text-muted">
-                    初めて作ったサイトです。
-                  </div>
+                  <div class="portfolio-caption-heading">愛娘</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-4 col-6 mb-4">
               <div class="portfolio-item">
-                <a href="https://web-kenpi.github.io/ringoneko/">
+                <a href="cat.html">
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
                       <i class="fas fa-plus fa-3x"></i>
@@ -150,17 +147,14 @@
                   <img class="img-fluid rounded" src="img/neko2.png" alt="" />
                 </a>
                 <div class="portfolio-caption text-center">
-                  <div class="portfolio-caption-heading">我が家のりんご猫</div>
-                  <div class="portfolio-caption-subheading text-muted">
-                    それとない日常。
-                  </div>
+                  <div class="portfolio-caption-heading">りんご猫</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="col-lg-4 col-6 mb-4">
               <div class="portfolio-item">
-                <a href="https://web-kenpi.github.io/Children-s-ecology/">
+                <a href="health.html">
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
                       <i class="fas fa-plus fa-3x"></i>
@@ -169,10 +163,55 @@
                   <img class="img-fluid rounded" src="img/child.png" alt="" />
                 </a>
                 <div class="portfolio-caption text-center">
-                  <div class="portfolio-caption-heading">子どもの生態</div>
-                  <div class="portfolio-caption-subheading text-muted">
-                    簡潔にまとめました。
+                  <div class="portfolio-caption-heading">健康の秘訣</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-6 mb-4">
+              <div class="portfolio-item">
+                <a href="crepe.html">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
                   </div>
+                  <img class="img-fluid rounded" src="img/crepe.png" alt="" />
+                </a>
+                <div class="portfolio-caption text-center">
+                  <div class="portfolio-caption-heading">クレープ</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-6 mb-4">
+              <div class="portfolio-item">
+                <a href="car.html">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <img class="img-fluid rounded" src="img/car.png" alt="" />
+                </a>
+                <div class="portfolio-caption text-center">
+                  <div class="portfolio-caption-heading">クルマ</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-6 mb-4">
+              <div class="portfolio-item">
+                <a href="book.html">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <img class="img-fluid rounded" src="img/book.png" alt="" />
+                </a>
+                <div class="portfolio-caption text-center">
+                  <div class="portfolio-caption-heading">最近読んだ本</div>
                 </div>
               </div>
             </div>
@@ -184,10 +223,11 @@
       <!-- About-->
       <section class="page-section" id="about">
         <div class="container">
-          <div class="text-center">
-            <h3 class="section-heading text-uppercase mb-5">
-              About 僕はこんなヒトです
-            </h3>
+          <div class="text-center mb-4">
+            <h2 class="section-heading text-uppercase">
+              About
+            </h2>
+            <p class="text-secondary">僕はこんなヒトです。</p>
           </div>
           <ul class="timeline">
             <li>
@@ -196,13 +236,12 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>2020年より</h4>
-                  <h4 class="subheading">プログラミング開始</h4>
+                  <h4 class="subheading">通称 けんぴ</h4>
                 </div>
                 <div class="timeline-body">
                   <p class="text-muted">
-                    HTML CSS JavaScript PHPを勉強し、 Wordpress
-                    Bootstrapが好きになり、 今現在pythonを猛勉強しております。
+                    1982年11月14日生まれ、さそり座の男です。舞台人から車屋さんになり、その後プログラミングを知り2020年より勉強を始めました。<br />趣味等詳細はこちら
+                    → <a href="#" class="text-info font-weight-bold">click</a>
                   </p>
                 </div>
               </div>
@@ -217,16 +256,13 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>2008年より</h4>
-                  <h4 class="subheading">日本舞踊家へ</h4>
+                  <h4 class="subheading">日本舞踊家</h4>
                 </div>
                 <div class="timeline-body">
                   <p class="text-muted">
-                    2008年より日本舞踊をはじめ、 2015年
-                    ぬこ部=アニソン×日舞×ねこボランティアへ入団。<br />
-                    <a href="https://www.youtube.com/watch?v=fEsoyIceC1M"
-                      >あんにょんフェスタにて</a
-                    >
+                    2008年より日本舞踊を始め、舞踊家として様々な活動をしておりました。
+                    2015年に妻や仲間と「ぬこ部=アニソン×日舞×ねこボランティア」を立ち上げ。<br />ステージの写真や動画はこちら
+                    → <a href="#" class="text-info font-weight-bold">click</a>
                   </p>
                 </div>
               </div>
@@ -247,7 +283,13 @@
                 <div class="timeline-body">
                   <p class="text-muted">
                     マイペースにコツコツ続けていくのを好みます。
-                    かなり健康で風邪をひいても一夜で治します。 よく笑います。
+                    かなり健康で風邪をひいても一夜で治します。 よく笑います。<br />
+                    <a
+                      href="https://twitter.com/Webbucom1?s=09"
+                      class="text-info font-weight-bold"
+                      >Twitter</a
+                    >
+                    やっています！一度のぞいてみてくださいね！
                   </p>
                 </div>
               </div>
